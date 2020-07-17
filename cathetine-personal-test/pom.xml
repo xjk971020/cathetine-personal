@@ -38,6 +38,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.cathetine</groupId>
+            <artifactId>cathetine-personal-designattern</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
         </dependency>

@@ -17,6 +17,7 @@
         <module>cathetine-personal-common-utils</module>
         <module>cathetine-personal-test</module>
         <module>cathetine-personal-model-access</module>
+        <module>cathetine-persional-design-pattern</module>
     </modules>
 
     <packaging>pom</packaging>
