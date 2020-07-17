@@ -1,8 +1,5 @@
 package com.cathetine;
 
-import com.cathetine.model.Generics;
-import com.cathetine.model.User;
-import net.sf.cglib.core.CollectionUtils;
 import org.junit.Test;
 
 import java.util.ArrayList;

@@ -38,13 +38,7 @@ public class DBStrategyManager {
         try {
             Method execute = dbStragety.getDeclaredMethod("execute");
             execute.invoke(dbStragety.newInstance());
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException | InstantiationException e) {
             e.printStackTrace();
         }
     }
