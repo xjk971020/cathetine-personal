@@ -1,13 +1,13 @@
 package com.cathetine.code._14_chart_Args._version_2.marshaler.impl;
 
-import com.cathetine.code._14_chart_Args.ArgsException;
+import com.cathetine.code._14_chart_Args._version_2.ArgsException;
 import com.cathetine.code._14_chart_Args._version_2.marshaler.ArgumentMarshaler;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import static com.cathetine.code._14_chart_Args.ErrorCode.INVALID_INTEGER;
-import static com.cathetine.code._14_chart_Args.ErrorCode.MISSING_INTEGER;
+import static com.cathetine.code._14_chart_Args._version_2.ErrorCode.INVALID_INTEGER;
+import static com.cathetine.code._14_chart_Args._version_2.ErrorCode.MISSING_INTEGER;
 
 /**
  * @author xjk

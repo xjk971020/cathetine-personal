@@ -1,12 +1,12 @@
-package com.cathetine.code._14_chart_Args;
+package com.cathetine.code._14_chart_Args._version_2;
 
 import com.cathetine.code._14_chart_Args._version_2.marshaler.ArgumentMarshaler;
 import com.cathetine.code._14_chart_Args._version_2.marshaler.impl.*;
 
 import java.util.*;
 
-import static com.cathetine.code._14_chart_Args.ErrorCode.INVALID_ARGUMENT_FORMAT;
-import static com.cathetine.code._14_chart_Args.ErrorCode.UNEXPECTED_ARGUMENT;
+import static com.cathetine.code._14_chart_Args._version_2.ErrorCode.INVALID_ARGUMENT_FORMAT;
+import static com.cathetine.code._14_chart_Args._version_2.ErrorCode.UNEXPECTED_ARGUMENT;
 
 /**
  * @author xjk
