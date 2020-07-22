@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="beanPostProcessor" class="com.cathetine.spring.lifecycle.MyBeanPostProcessor">
+    </bean>
+
+    <bean id="instantiationAwareBeanPostProcessor" class="com.cathetine.spring.lifecycle.MyInstantiationAwareBeanPostProcessor">
+    </bean>
+
+    <bean id="beanFactoryPostProcessor" class="com.cathetine.spring.lifecycle.MyBeanFactoryPostProcessor">
+    </bean>
+
+    <bean id="user" name="user" class="com.cathetine.spring.lifecycle.SpringUser"
+          init-method="springUserIinit" destroy-method="springUserDestory">
+        <property name="phone" value="15975768592"/>
+        <property name="username" value="cathetine"/>
+    </bean>
+
+</beans>
