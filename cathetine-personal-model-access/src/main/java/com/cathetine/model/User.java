@@ -74,7 +74,17 @@ public class User {
     }
 
     public boolean isMan() {
-        return "1".equals(getSex());
+        return getSex().equals(1);
+    }
+
+    public String desc() {
+        if (this.getSex().equals(1)) {
+            return getUserName() + " is man.";
+        } else if (this.getSex().equals(2)){
+            return getUserName() + " is woman.";
+        } else {
+            throw new RuntimeException("param[sex] is wrong.");
+        }
     }
 
     @Override

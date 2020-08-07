@@ -15,6 +15,7 @@ public class DoubleFunctionTest {
     @Test
     public void test() {
         User user = new User();
+        user.setAmt(10000.0);
         user.setAmtFunction(new DoubleFunction<User>() {
             @Override
             public User apply(double value) {

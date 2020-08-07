@@ -8,6 +8,7 @@ import java.util.Map;
 /**
  * @author xjk
  * @date 2020/7/16 -  23:40
+ * DB策略类单例工厂
  **/
 public class DBStrategyManager {
 
@@ -21,23 +22,23 @@ public class DBStrategyManager {
         private static DBStrategyManager dbStrategyManager = new DBStrategyManager();
     }
 
-    private static Map<String,Class> stragetyMap = new HashMap<>();
+    private static Map<String,Class> StrategyMap = new HashMap<>();
 
     static {
         for (DBEnum value : DBEnum.values()) {
-            stragetyMap.put(value.getType(), value.getClazz());
+            StrategyMap.put(value.getType(), value.getClazz());
         }
     }
 
-    private Class getClass(String type) {
-        return stragetyMap.get(type);
+    private static Class getClass(String type) {
+        return StrategyMap.get(type);
     }
 
     public void execute(String type) {
-        Class dbStragety = getClass(type);
+        Class dbStrategy = getClass(type);
         try {
-            Method execute = dbStragety.getDeclaredMethod("execute");
-            execute.invoke(dbStragety.newInstance());
+            Method execute = dbStrategy.getDeclaredMethod("execute");
+            execute.invoke(dbStrategy.newInstance());
         } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException | InstantiationException e) {
             e.printStackTrace();
         }

@@ -10,17 +10,20 @@ import java.util.function.Supplier;
  * @Description:
  * @Date: 2020/7/14
  */
-public class Generics<T> {
+public class AbstractGenerics<T> {
 
     T t;
 
     List<T> list;
 
-    public Generics(T t) {
+    public AbstractGenerics() {
+    }
+
+    public AbstractGenerics(T t) {
         this.t = t;
     }
 
-    public Generics(List<T> list) {
+    public AbstractGenerics(List<T> list) {
         this.list = list;
     }
 
