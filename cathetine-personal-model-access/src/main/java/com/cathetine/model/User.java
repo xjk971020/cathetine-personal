@@ -8,12 +8,13 @@ import java.util.function.Predicate;
  * @Description:测试实体
  * @Date: 2020/7/14
  */
-public class User {
+public class User implements Cloneable{
     private Long id;
     private String userName;
     private Integer sex;
     private String phone;
     private Double amt;
+    private Role role;
 
     public Long getId() {
         return id;
@@ -59,6 +60,14 @@ public class User {
         this.amt = amt;
     }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     public User setAmtFunction(DoubleFunction<User> amtFunction) {
         return amtFunction.apply(getAmt());
     }
@@ -92,7 +101,18 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", userName='" + userName + '\'' +
+                ", sex=" + sex +
                 ", phone='" + phone + '\'' +
+                ", amt=" + amt +
+                ", role=" + role +
                 '}';
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        User clone = (User)super.clone();
+        Role roleClone = (Role) role.clone();
+        clone.setRole(roleClone);
+        return clone;
     }
 }
