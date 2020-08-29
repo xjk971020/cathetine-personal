@@ -11,5 +11,12 @@
 
     <artifactId>cathetine-personal-design-pattern</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.cathetine</groupId>
+            <artifactId>cathetine-personal-model-access</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

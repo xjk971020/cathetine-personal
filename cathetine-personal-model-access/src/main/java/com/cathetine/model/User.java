@@ -14,6 +14,7 @@ public class User implements Cloneable{
     private Integer sex;
     private String phone;
     private Double amt;
+    private String nation;
     private Role role;
 
     public Long getId() {
@@ -66,6 +67,14 @@ public class User implements Cloneable{
 
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public String getNation() {
+        return nation;
+    }
+
+    public void setNation(String nation) {
+        this.nation = nation;
     }
 
     public User setAmtFunction(DoubleFunction<User> amtFunction) {
