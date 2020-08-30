@@ -8,8 +8,8 @@ import com.cathetine.model.User;
  **/
 public class ChineseUserFactory extends AbstractUserFactory {
     @Override
-    protected User getUser() {
-        User user = new User();
+    public User getUser() {
+        User user = get();
         user.setNation("Chinese");
         return user;
     }
