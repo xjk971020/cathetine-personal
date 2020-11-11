@@ -17,9 +17,10 @@
         <module>cathetine-personal-common-utils</module>
         <module>cathetine-personal-test</module>
         <module>cathetine-personal-model-access</module>
-        <module>cathetine-persional-design-pattern</module>
+        <module>cathetine-personal-design-pattern</module>
         <module>cathetine-personal-clean-code-learn</module>
-        <module>cathetine-persional-spring-framework</module>
+        <module>cathetine-personal-spring-framework</module>
+        <module>cathetine-personal-springboot-framework</module>
         <module>cathetine-personal-thread-learn</module>
     </modules>
 
